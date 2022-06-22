@@ -1,8 +1,5 @@
 
 
-from multiprocessing.sharedctypes import Value
-
-
 class Restaurante:
     
     def __init__(self, nome, pedidos_na_fila=0):
@@ -18,3 +15,4 @@ class Restaurante:
     def remove_pedido(self):
         if self.pedidos_na_fila > 0:
             self.pedidos_na_fila -= 1
+            

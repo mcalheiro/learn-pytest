@@ -1,5 +1,4 @@
 import pytest
-
 from restaurante import Restaurante
 
 @pytest.fixture
@@ -37,3 +36,4 @@ def test_remocao_de_pedidos(inicial, final):
     restaurante = Restaurante('Pizzaria X', inicial)
     restaurante.remove_pedido()
     assert restaurante.pedidos_na_fila == final
+    
